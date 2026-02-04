@@ -84,19 +84,51 @@ export default function MarketingStatsSection() {
       ref={sectionRef}
       className="relative overflow-hidden bg-neutral-900 py-16 md:py-20"
     >
-      {/* Subtle abstract line graphics */}
-      <div className="pointer-events-none absolute inset-0 opacity-20">
-        <svg className="absolute bottom-0 right-0 h-2/3 w-2/3" viewBox="0 0 400 300" fill="none">
-          <path d="M0 150 Q100 50 200 150 T400 150" stroke="white" strokeWidth="0.5" fill="none" />
-          <path d="M0 200 Q150 100 300 200 T500 200" stroke="white" strokeWidth="0.5" fill="none" />
-          <path d="M50 250 Q200 150 350 250" stroke="white" strokeWidth="0.5" fill="none" />
-        </svg>
-        <svg className="absolute left-0 top-1/2 h-1/2 w-1/3 opacity-60" viewBox="0 0 200 200" fill="none">
-          <path d="M0 100 L80 80 L120 120 L200 40" stroke="white" strokeWidth="0.5" fill="none" />
+      {/* White wavy lines behind counter – two main waves passing behind the boxes */}
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <svg
+          className="absolute inset-0 h-full w-full"
+          viewBox="0 0 1200 400"
+          preserveAspectRatio="none"
+          fill="none"
+        >
+          {/* Upper wavy line – passes behind first two counter boxes */}
+          <path
+            d="M -50 120 Q 200 80 400 120 T 850 120 T 1250 120"
+            stroke="white"
+            strokeWidth="1"
+            strokeOpacity="0.35"
+          />
+          <path
+            d="M -30 140 Q 250 100 450 140 T 800 100 T 1220 140"
+            stroke="white"
+            strokeWidth="1"
+            strokeOpacity="0.2"
+          />
+          {/* Lower wavy line – passes behind last two counter boxes */}
+          <path
+            d="M -80 260 Q 150 220 450 260 T 900 260 T 1280 260"
+            stroke="white"
+            strokeWidth="1"
+            strokeOpacity="0.35"
+          />
+          <path
+            d="M -50 280 Q 200 240 500 280 T 850 240 T 1250 280"
+            stroke="white"
+            strokeWidth="1"
+            strokeOpacity="0.2"
+          />
+          {/* Extra faint curves that intersect for depth */}
+          <path
+            d="M 100 80 Q 500 180 900 80 Q 1100 40 1300 100"
+            stroke="white"
+            strokeWidth="0.75"
+            strokeOpacity="0.15"
+          />
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 md:px-10">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
         {/* Linear slider heading: "Marketing – Karachi" */}
         <div className="mb-12 overflow-hidden md:mb-16">
           <div className="flex w-max animate-marquee items-baseline gap-8 whitespace-nowrap">
