@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <MarketingStatsSection />
       <WavySeparator />
       <ServicesSection />
+      <MarketingStatsSection />
       <WhatsAppButton />
       <ScrollToTop />
     </>
