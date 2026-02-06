@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -21,25 +22,15 @@ const company = [
 export default function Footer() {
   return (
     <footer className="relative bg-neutral-900">
-      {/* Gradient ribbon transition above footer */}
-      <div className="relative h-24 w-full md:h-28" aria-hidden>
-        <svg
-          viewBox="0 0 1440 120"
-          className="absolute inset-0 h-full w-full"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <linearGradient id="footer-ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#7c3aed" />
-              <stop offset="50%" stopColor="#c026d3" />
-              <stop offset="100%" stopColor="#ea580c" />
-            </linearGradient>
-          </defs>
-          <path
-            fill="url(#footer-ribbon)"
-            d="M0,80 C360,20 720,100 1080,60 C1260,40 1380,50 1440,60 L1440,120 L0,120 Z"
-          />
-        </svg>
+      {/* Line image transition above footer */}
+      <div className="relative h-20 w-full md:h-28" aria-hidden>
+        <Image
+          src="/line.png"
+          alt=""
+          fill
+          className="object-cover object-top"
+          sizes="100vw"
+        />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-2 md:px-10 md:pb-10">
