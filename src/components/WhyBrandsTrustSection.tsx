@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function WhyBrandsTrustSection() {
   return (
     <section className="relative overflow-hidden bg-neutral-100 py-16 md:py-24">
@@ -50,24 +52,37 @@ export default function WhyBrandsTrustSection() {
           </div>
         </div>
 
-        {/* Why Brands Trust Us + tagline */}
-        <div className="flex flex-wrap items-center gap-4">
-          <h2 className="text-3xl font-bold text-neutral-900 md:text-4xl">
-            Why Brands Trust Us
-          </h2>
-          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#8e44ad] text-white">
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
+        {/* Why Brands Trust Us: image + heading & tagline */}
+        <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-14">
+          <div className="relative h-56 w-full shrink-0 overflow-hidden rounded-2xl shadow-lg md:h-72 md:max-w-md">
+            <Image
+              src="/Why%20Brands%20Trust%20Us.png"
+              alt="Why Brands Trust Us"
+              fill
+              sizes="(max-width: 768px) 100vw, 28rem"
+              className="object-contain object-left"
+            />
+          </div>
+          <div>
+            <div className="flex flex-wrap items-center gap-4">
+              <h2 className="text-3xl font-bold text-neutral-900 md:text-4xl">
+                Why Brands Trust Us
+              </h2>
+              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#8e44ad] text-white">
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+            <p className="mt-4 max-w-2xl text-lg text-neutral-700 md:text-xl">
+              Because{" "}
+              <span className="border-b-4 border-[#0007bf] font-semibold text-neutral-900">
+                results speak louder
+              </span>{" "}
+              than words.
+            </p>
           </div>
         </div>
-        <p className="mt-4 max-w-2xl text-lg text-neutral-700 md:text-xl">
-          Because{" "}
-          <span className="border-b-4 border-[#0007bf] font-semibold text-neutral-900">
-            results speak louder
-          </span>{" "}
-          than words.
-        </p>
       </div>
     </section>
   );
