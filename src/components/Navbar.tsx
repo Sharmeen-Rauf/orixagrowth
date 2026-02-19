@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         {/* Logo: white on transparent navbar, colored on white navbar */}
         <Link href="/" className="relative flex items-center" onClick={() => setMobileOpen(false)}>
-          <span className="relative block h-9 w-[140px] md:h-10 md:w-[160px]">
+          <span className="relative block h-10 w-[155px] md:h-11 md:w-[185px]">
             {isLight ? (
               <Image
                 src="/OG-Logo_horizontal.jpg.jpeg"

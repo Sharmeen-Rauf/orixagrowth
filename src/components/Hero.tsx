@@ -1,16 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-const HeroScene = dynamic(() => import("./HeroScene"), {
-  ssr: false,
-  loading: () => (
-    <div className="absolute inset-0 flex items-center justify-center bg-[#502961]/20">
-      <div className="h-24 w-24 animate-pulse rounded-full bg-[#8e44ad]/30" />
-    </div>
-  ),
-});
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
@@ -27,19 +16,17 @@ export default function Hero() {
       />
 
       {/* Content container */}
-      <div className="relative z-10 flex min-h-screen flex-col">
-        <div className="flex flex-1 flex-col items-center gap-8 px-6 pt-32 pb-16 md:flex-row md:items-center md:justify-between md:gap-12 md:px-12 lg:px-16">
-          {/* Left: Heading */}
-          <div className="max-w-2xl flex-shrink-0 text-white">
+      <div className="relative z-10 flex min-h-screen flex-col justify-center">
+        <div className="px-6 pt-24 pb-16 md:px-12 lg:px-16">
+          <div className="max-w-2xl text-white">
             <p className="mb-3 text-lg font-medium tracking-wide text-white/95 md:text-xl">
-              Marketing that moves the needle
+              Powering Your Digital Growth
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-              Your trusted Digital Marketing Agency in Karachi
+              Driving Digital Success with Trust
             </h1>
             <p className="mt-6 text-lg text-white/90">
-              We help brands grow with data-driven strategies and creative
-              campaigns that deliver results.
+              Accelerating brand growth through insight-led strategies and results-focused execution.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
@@ -55,11 +42,6 @@ export default function Hero() {
                 View Work
               </a>
             </div>
-          </div>
-
-          {/* Right: 3D graphic */}
-          <div className="relative h-[320px] w-full flex-shrink-0 md:h-[420px] md:w-[50%] lg:h-[480px]">
-            <HeroScene />
           </div>
         </div>
       </div>
