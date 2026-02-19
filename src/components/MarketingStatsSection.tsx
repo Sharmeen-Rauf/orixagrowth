@@ -129,7 +129,7 @@ export default function MarketingStatsSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
-        {/* Linear slider heading: "Marketing – Karachi" */}
+        {/* Linear slider heading */}
         <div className="mb-12 overflow-hidden md:mb-16">
           <div className="flex w-max animate-marquee items-baseline gap-8 whitespace-nowrap">
             {[...Array(8)].map((_, i) => (
@@ -137,7 +137,7 @@ export default function MarketingStatsSection() {
                 key={i}
                 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl"
               >
-                Marketing – Karachi
+                Marketing
               </span>
             ))}
           </div>
