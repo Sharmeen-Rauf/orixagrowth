@@ -59,7 +59,7 @@ export default function BlogsSection() {
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">
             Blogs
           </h2>
-          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-purple-600 text-white">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#8e44ad] text-white">
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
@@ -113,7 +113,7 @@ export default function BlogsSection() {
                 </p>
                 <Link
                   href={post.href}
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-purple-600 hover:text-purple-700"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#0007bf] hover:text-[#060b84]"
                 >
                   Read More
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

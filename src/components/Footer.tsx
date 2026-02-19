@@ -21,7 +21,7 @@ const company = [
 export default function Footer() {
   return (
     <footer className="relative bg-neutral-900">
-      {/* Wavy gradient ribbon above footer – purple → pink → orange */}
+      {/* Wavy gradient ribbon above footer – dark purple → light purple → dark blue → light blue */}
       <div className="relative h-24 w-full md:h-32" aria-hidden>
         <svg
           viewBox="0 0 1440 140"
@@ -30,10 +30,10 @@ export default function Footer() {
         >
           <defs>
             <linearGradient id="footer-ribbon-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#7c3aed" />
-              <stop offset="45%" stopColor="#c026d3" />
-              <stop offset="75%" stopColor="#dc2626" />
-              <stop offset="100%" stopColor="#ea580c" />
+              <stop offset="0%" stopColor="#502961" />
+              <stop offset="45%" stopColor="#8e44ad" />
+              <stop offset="75%" stopColor="#060b84" />
+              <stop offset="100%" stopColor="#0007bf" />
             </linearGradient>
           </defs>
           {/* Organic S-curve: left low → sweep up → center dip → right sweep up */}
@@ -164,7 +164,7 @@ export default function Footer() {
               href="https://digitalhyperlinks.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-orange-500 hover:text-orange-400"
+              className="font-medium text-[#0007bf] hover:text-[#060b84]"
             >
               Digital Hyperlinks (PVT) LTD.
             </a>

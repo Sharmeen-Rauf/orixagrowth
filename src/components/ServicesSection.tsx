@@ -8,8 +8,8 @@ const services = [
     description:
       "Rank higher on Google and attract traffic that actually converts.",
     href: "/services/seo",
-    color: "bg-orange-500",
-    lightOverlay: "bg-orange-400/30",
+    color: "bg-[#0007bf]",
+    lightOverlay: "bg-[#0007bf]/30",
     icons: (
       <>
         <svg className="absolute right-6 top-8 h-16 w-16 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,8 +25,8 @@ const services = [
     title: "Social Media Management",
     description: "Engage your audience and grow your brand across social platforms.",
     href: "/services/social-media",
-    color: "bg-pink-500",
-    lightOverlay: "bg-pink-400/30",
+    color: "bg-[#8e44ad]",
+    lightOverlay: "bg-[#8e44ad]/30",
     icons: (
       <>
         <svg className="absolute right-10 top-12 h-14 w-14 opacity-20" fill="currentColor" viewBox="0 0 24 24">
@@ -45,8 +45,8 @@ const services = [
     title: "Performance Marketing",
     description: "Launch targeted ad campaigns that deliver fast, measurable results.",
     href: "/services/performance-marketing",
-    color: "bg-purple-600",
-    lightOverlay: "bg-purple-500/30",
+    color: "bg-[#502961]",
+    lightOverlay: "bg-[#502961]/30",
     icons: (
       <>
         <svg className="absolute right-8 top-10 h-14 w-14 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ export default function ServicesSection() {
           <h2 className="text-4xl font-bold tracking-tight text-neutral-900 md:text-5xl">
             Services
           </h2>
-          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-purple-600 text-white">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#8e44ad] text-white">
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
@@ -156,7 +156,7 @@ export default function ServicesSection() {
         <div className="mt-14 flex justify-center md:mt-16">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-8 py-4 font-semibold text-white shadow-lg transition-all hover:bg-orange-600 hover:shadow-orange-500/30"
+            className="inline-flex items-center gap-2 rounded-full bg-[#0007bf] px-8 py-4 font-semibold text-white shadow-lg transition-all hover:bg-[#060b84]"
           >
             See More
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20">

@@ -14,11 +14,10 @@ export default function WavySeparator() {
             x2="100%"
             y2="0%"
           >
-            <stop offset="0%" stopColor="#7c3aed" />
-            <stop offset="30%" stopColor="#a855f7" />
-            <stop offset="50%" stopColor="#c026d3" />
-            <stop offset="70%" stopColor="#dc2626" />
-            <stop offset="100%" stopColor="#ea580c" />
+            <stop offset="0%" stopColor="#502961" />
+            <stop offset="40%" stopColor="#8e44ad" />
+            <stop offset="70%" stopColor="#060b84" />
+            <stop offset="100%" stopColor="#0007bf" />
           </linearGradient>
         </defs>
         {/* Thick ribbon: S-curve from left (purple) through center loop to right (orange) */}

@@ -51,7 +51,7 @@ function StatCard({
     <div
       className="rounded-2xl p-[1px]"
       style={{
-        background: "linear-gradient(135deg, #ea580c 0%, #c026d3 50%, #7c3aed 100%)",
+        background: "linear-gradient(135deg, #0007bf 0%, #8e44ad 50%, #502961 100%)",
       }}
     >
       <div className="rounded-2xl bg-neutral-800/95 p-6 md:p-8">

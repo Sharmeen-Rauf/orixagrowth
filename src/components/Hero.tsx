@@ -5,8 +5,8 @@ import dynamic from "next/dynamic";
 const HeroScene = dynamic(() => import("./HeroScene"), {
   ssr: false,
   loading: () => (
-    <div className="absolute inset-0 flex items-center justify-center bg-purple-900/20">
-      <div className="h-24 w-24 animate-pulse rounded-full bg-purple-500/30" />
+    <div className="absolute inset-0 flex items-center justify-center bg-[#502961]/20">
+      <div className="h-24 w-24 animate-pulse rounded-full bg-[#8e44ad]/30" />
     </div>
   ),
 });
@@ -22,7 +22,7 @@ export default function Hero() {
         }}
       />
       <div
-        className="absolute inset-0 bg-gradient-to-br from-purple-900/85 via-purple-800/80 to-purple-900/90"
+        className="absolute inset-0 bg-gradient-to-br from-[#502961]/90 via-[#8e44ad]/85 to-[#502961]/90"
         aria-hidden
       />
 
@@ -44,7 +44,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white shadow-lg transition-all hover:bg-orange-600"
+                className="inline-flex items-center rounded-lg bg-[#0007bf] px-6 py-3 font-semibold text-white shadow-lg transition-all hover:bg-[#060b84]"
               >
                 Get Started
               </a>

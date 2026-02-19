@@ -33,8 +33,8 @@ function Blob() {
           iridescenceThicknessRange={[0, 1400]}
           clearcoat={0.9}
           clearcoatRoughness={0.1}
-          color="#8b5cf6"
-          attenuationColor="#f97316"
+          color="#8e44ad"
+          attenuationColor="#0007bf"
           attenuationDistance={0.5}
           envMapIntensity={1}
         />
@@ -49,7 +49,7 @@ function SceneContent() {
       <ambientLight intensity={0.6} />
       <directionalLight position={[10, 10, 5]} intensity={1.2} />
       <directionalLight position={[-5, -5, -5]} intensity={0.4} />
-      <pointLight position={[0, 5, 5]} intensity={0.8} color="#f97316" />
+      <pointLight position={[0, 5, 5]} intensity={0.8} color="#0007bf" />
       <Blob />
     </>
   );

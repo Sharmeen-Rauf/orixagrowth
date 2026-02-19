@@ -21,7 +21,7 @@ export default function LaunchCTASection() {
           </h2>
           <Link
             href="/contact"
-            className="mt-6 inline-block rounded-lg bg-orange-500 px-8 py-3.5 font-semibold text-white shadow-lg transition-all hover:bg-orange-600"
+            className="mt-6 inline-block rounded-lg bg-[#0007bf] px-8 py-3.5 font-semibold text-white shadow-lg transition-all hover:bg-[#060b84]"
           >
             Connect & Grow
           </Link>
@@ -46,8 +46,8 @@ export default function LaunchCTASection() {
                 />
                 <defs>
                   <linearGradient id="launch-arrow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#7c3aed" />
-                    <stop offset="100%" stopColor="#a855f7" />
+                  <stop offset="0%" stopColor="#502961" />
+                  <stop offset="100%" stopColor="#8e44ad" />
                   </linearGradient>
                 </defs>
               </svg>

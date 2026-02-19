@@ -65,7 +65,7 @@ export default function Navbar() {
               href={item.href}
               className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                 isLight
-                  ? `text-neutral-900 hover:bg-neutral-100 ${item.active ? "bg-neutral-200" : ""}`
+                  ? `text-neutral-900 hover:bg-neutral-100 ${item.active ? "bg-[#8e44ad]/20 text-[#502961]" : ""}`
                   : `text-white hover:bg-white/10 ${item.active ? "bg-white/20" : ""}`
               }`}
             >
@@ -111,7 +111,7 @@ export default function Navbar() {
           </button>
           <Link
             href="/contact"
-            className="rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-orange-600 hover:shadow-orange-500/30"
+            className="rounded-lg bg-[#0007bf] px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-[#060b84]"
           >
             GET A QUOTE
           </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div
           className={`absolute left-0 right-0 top-full mt-1 rounded-lg px-6 py-4 shadow-xl backdrop-blur md:hidden ${
-            isLight ? "bg-white" : "bg-purple-900/95"
+            isLight ? "bg-white" : "bg-[#502961]/95"
           }`}
         >
           <div className="flex flex-col gap-1">

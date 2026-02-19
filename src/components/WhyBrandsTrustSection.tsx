@@ -55,7 +55,7 @@ export default function WhyBrandsTrustSection() {
           <h2 className="text-3xl font-bold text-neutral-900 md:text-4xl">
             Why Brands Trust Us
           </h2>
-          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-purple-600 text-white">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#8e44ad] text-white">
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
@@ -63,7 +63,7 @@ export default function WhyBrandsTrustSection() {
         </div>
         <p className="mt-4 max-w-2xl text-lg text-neutral-700 md:text-xl">
           Because{" "}
-          <span className="border-b-4 border-orange-500 font-semibold text-neutral-900">
+          <span className="border-b-4 border-[#0007bf] font-semibold text-neutral-900">
             results speak louder
           </span>{" "}
           than words.

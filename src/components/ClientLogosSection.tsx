@@ -42,7 +42,7 @@ export default function ClientLogosSection() {
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl">
             What Our Clients Say
           </h2>
-          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-purple-600 text-white">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#8e44ad] text-white">
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
@@ -52,7 +52,7 @@ export default function ClientLogosSection() {
         {/* Trust statement */}
         <p className="mb-10 text-lg text-neutral-700 md:mb-12 md:text-xl">
           Trusted by{" "}
-          <span className="font-semibold text-purple-600 underline decoration-orange-500 decoration-2 underline-offset-2">
+          <span className="font-semibold text-[#8e44ad] underline decoration-[#0007bf] decoration-2 underline-offset-2">
             100+ Happy Clients
           </span>{" "}
           – from startups to enterprise brands.
