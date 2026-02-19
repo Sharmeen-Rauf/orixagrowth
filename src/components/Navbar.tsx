@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -33,21 +34,26 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex flex-col" onClick={() => setMobileOpen(false)}>
-          <span
-            className={`text-2xl font-bold tracking-tight md:text-3xl ${
-              isLight ? "text-neutral-900" : "text-white"
-            }`}
-          >
-            ORIXA
-          </span>
-          <span
-            className={`text-xs font-medium uppercase tracking-widest ${
-              isLight ? "text-neutral-700" : "text-white/90"
-            }`}
-          >
-            agency
+        {/* Logo: white on transparent navbar, colored on white navbar */}
+        <Link href="/" className="relative flex items-center" onClick={() => setMobileOpen(false)}>
+          <span className="relative block h-9 w-[140px] md:h-10 md:w-[160px]">
+            {isLight ? (
+              <Image
+                src="/OG-Logo_horizontal.jpg.jpeg"
+                alt="ORIXA Agency"
+                fill
+                className="object-contain object-left"
+                priority
+              />
+            ) : (
+              <Image
+                src="/OG-Logo_horizontal-white.png"
+                alt="ORIXA Agency"
+                fill
+                className="object-contain object-left"
+                priority
+              />
+            )}
           </span>
         </Link>
 
